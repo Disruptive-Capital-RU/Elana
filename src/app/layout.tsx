@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Toaster } from "@/components/ui/toaster";
 import { Navigation } from "@/components/navigation/navigation";
+import { Footer } from "@/components/footer/footer";
 
 export const metadata: Metadata = {
   title: "Elana - Personalized Genetics-Based Nutrition",
@@ -40,6 +41,7 @@ export default function RootLayout({
         <div className="relative flex min-h-screen flex-col">
           <Navigation />
           <main className="flex-1">{children}</main>
+          <Footer />
         </div>
         <Toaster />
       </body>
